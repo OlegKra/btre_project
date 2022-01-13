@@ -2,9 +2,11 @@
 {% load static %}
 {% load humanize %}
 
-{% block title %}| Welcome {% endblock %}
+{% block title %}| Welcome {% endblock title %}
 
 {% block content %}
+
+{% include 'partials/_alerts.html' %}
 
 <!-- Showcase -->
 <section id="showcase">
@@ -60,13 +62,15 @@
                 </select>
               </div>
             </div>
-            <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+            <button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- Listings -->
 <section id="listings" class="py-5">
